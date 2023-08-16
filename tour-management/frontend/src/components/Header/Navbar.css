@@ -1,0 +1,169 @@
+:root {
+  --primaryColor:hsl(199,100%,33%);
+  --SecondaryColor:hsl(187,85%,43%);
+  --gradientColor:linear-gradient(to right,hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDean:hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --inputColor:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBG:rgb(225,225,235);
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteColor);
+  width: 100%;
+  height: 100px;
+  padding: 1rem;
+  z-index: 1000;
+  box-shadow: 2px 2px 2px rgba(2, 15, 29, 0.15);
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+}
+header .activeNavbar {
+  background-color: var(--whiteColor);
+}
+header .logo {
+  color: var(--blackColor);
+  font-weight: 600;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+header .logo .icon {
+  font-size: 30px;
+  color: var(--primaryColor);
+  transform: translateY(5px);
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  header .navBar {
+    position: absolute;
+    background: var(--whiteColorDean);
+    height: -moz-max-content;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    color: var(--blackColor);
+    top: -500rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0px 2px 4px rgba(2, 15, 29, 0.9);
+    transition: 1.5s ease-in-out;
+    text-decoration: none;
+  }
+  header .navBar .navLists {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.5rem 0;
+    text-decoration: none;
+  }
+  header .navBar .navLists .navItem {
+    padding: 0.5rem 0;
+    text-decoration: none;
+  }
+  header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  header .navBar .navLists .navItem .navLink a:hover {
+    color: var(--primaryColor);
+    text-decoration: none;
+  }
+  header .navBar .navLists .btnm {
+    margin-top: 1rem;
+    text-decoration: none;
+  }
+  header .navBar .navLists .btnm a {
+    font-weight: 600;
+    color: var(--whiteColor);
+    text-decoration: none;
+  }
+  header .navBar .closeNavbar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    color: var(--primaryColor);
+  }
+  header .navBar .closeNavbar:hover {
+    color: var(--SecondaryColor);
+  }
+  header .activeNavbar {
+    top: 7rem;
+  }
+}
+header .toggleNavbar .icon {
+  font-size: 30px;
+  color: var(--primaryColor);
+}
+header .toggleNavbar:hover.icon {
+  color: var(--SecondaryColor);
+}
+
+@media screen and (min-width: 769px) {
+  .toggleNavbar, .closeNavbar {
+    display: none;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+  }
+  .header .navBar .navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: row;
+    text-decoration: none;
+  }
+  .header .navBar .navLists .navItem .navLink {
+    color: var(--textColor);
+    padding: 0 0.45rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .header .navBar .navLists .navItem .navLink:hover {
+    color: var(--primaryColor);
+  }
+  .header .navBar .navLists .btnm {
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  .header .navBar .navLists .btnm:hover {
+    color: var(--primaryColor);
+  }
+  .header .navBar .navLists .btnm a {
+    color: var(--whiteColor);
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header .navBar .navLists .navItem {
+    padding: 0 0.7rem;
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header {
+    padding: 1rem 8.5rem;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

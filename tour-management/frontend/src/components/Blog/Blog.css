@@ -1,0 +1,6 @@
+.Blog .Blogs img {
+  height: 350px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=Blog.css.map */
